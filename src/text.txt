@@ -1,0 +1,11 @@
+Library App 
+
+ Kitapların kategorilerine göre kayıt altına alınacağı bir uygulama 
+
+*Dependencies
+ -Json-server
+ -axios
+ -redux,react-redux
+ -react-router-dom
+ -UI kütüphanesi olarak Bootstrap
+ 

@@ -1,0 +1,22 @@
+{
+    "books":[
+        {
+            "id":"1",
+            "title":"suç ve ceza",
+            "publisher":"hasan ali yücel",
+            "price":100,
+            "isbn":"650476796597",
+            "categoryId":"1"
+        }
+    ],
+    "categories":[
+        {
+            "id":"1",
+            "name":"roman"
+        },
+        {
+            "id":"2",
+            "name":"hikaye"
+        }
+    ]
+}
