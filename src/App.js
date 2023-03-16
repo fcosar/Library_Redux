@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
+import BookDetail from './pages/BookDetail';
 import Error from './components/Error';
 
 
@@ -65,6 +66,7 @@ function App() {
        <Routes>
          <Route path="/" element={<Home/>} />
          <Route path="/add-book" element={<AddBook />} />
+         <Route path="/book-detail/:bookId" element={<BookDetail/>}/>
          <Route path="*" element={<NotFound/>} />
        </Routes>
     </BrowserRouter>
