@@ -2,12 +2,15 @@ import React from "react";
 import Header from "../components/Header";
  
  
- const NotFaund = () => {
+ const NotFound = () => {
    return (
     
      <div>
        <Header/>
-       404 Not Faund</div>
+       <h1>
+       404 Not Found
+       </h1>
+       </div>
    )
  }
- export default NotFaund
+ export default NotFound

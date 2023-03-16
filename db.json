@@ -1,22 +1,44 @@
 {
-    "books":[
-        {
-            "id":"1",
-            "title":"suç ve ceza",
-            "publisher":"hasan ali yücel",
-            "price":100,
-            "isbn":"650476796597",
-            "categoryId":"1"
-        }
-    ],
-    "categories":[
-        {
-            "id":"1",
-            "name":"roman"
-        },
-        {
-            "id":"2",
-            "name":"hikaye"
-        }
-    ]
+  "books": [
+    {
+      "id": "1",
+      "title": "suç ve ceza",
+      "publisher": "hasan ali yücel",
+      "price": 100,
+      "isbn": "650476796597",
+      "categoryId": "1"
+    },
+    {
+      "id": "1678557119326",
+      "title": "Diriliş ",
+      "author": "Victor Hugo",
+      "publisher": "Hasan Ali Yücel",
+      "price": "100",
+      "isbn": "435784345642",
+      "categoryId": "1"
+    },
+    {
+      "id": "1678557230173",
+      "title": "sefiller",
+      "author": "Victor Hugo",
+      "publisher": "Hasan Ali yücel",
+      "price": "100",
+      "isbn": "32415413543",
+      "categoryId": "1"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "roman"
+    },
+    {
+      "id": "2",
+      "name": "hikaye"
+    },
+    {
+      "id":"3",
+      "name":"bilim kurgu"
+       }
+  ]
 }

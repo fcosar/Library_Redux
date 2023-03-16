@@ -1,0 +1,11 @@
+body{
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.headerBgDark{
+    background-color: #2E4F4F !important;
+}
+.headerBgLight{
+    background-color: #539165;
+}
