@@ -24,9 +24,10 @@ const BookDetail = () => {
   return (
     <div>
       <Header />
-      <div className="container my-5 d-flex justify-content-center ">
+      <div className="container my-5 d-flex justify-content-center">
         <div
           style={{
+            background: "#fffc",
             borderRadius: "15px",
             padding: "40px",
             width: "75%",
@@ -42,7 +43,7 @@ const BookDetail = () => {
             <span
               onClick={() => navigate("/")}
               style={{ position: "absolute", left: 0, cursor: "pointer" }}
-              className="badge bg-secondary">
+              className="badge bg-success">
               Geri
             </span>{" "}
             <h1>Kitap Bilgileri</h1>

@@ -89,6 +89,7 @@ const ListBooks = () => {
                           className="btn-sm"
                           text="Güncelle"
                           type="secondary"
+                          onClick={()=>navigate (`/edit-book/${book.id}`)}
                         />
                       </div>
                     </td>

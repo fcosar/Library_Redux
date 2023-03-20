@@ -8,7 +8,7 @@ import "../styles/general.css";
 // import sun from '../assets/sun1.gif'
 
 const Header = () => {
-  const { themeState } = useSelector((state) => state);
+  const { themeState,booksState,categoriesState } = useSelector((state) => state);
   const dispatch = useDispatch();
   return (
     <nav
@@ -37,10 +37,19 @@ const Header = () => {
                 Kitap İşlemleri
               </Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link active" to={"/categories"}>
+                Kategori İşlemleri
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
-      <div style={{ position: "absolute", right: "20px" }}>
+      <div style={{ position: "absolute", right: "20px",display:'flex',alignItems:'center',gap:'10px' }}>
+        <div>
+          <p style={{margin:0,color:'#fff'}}>Toplam Kitap: {booksState.books.length}</p>
+          <p style={{margin:0,color:'#fff'}}>Toplam Kategori: {categoriesState.categories.length}</p>
+        </div>
         {themeState === "light" ? (
           <button
             onClick={() =>

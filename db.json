@@ -3,7 +3,7 @@
     {
       "id": "1",
       "title": "suç ve ceza",
-      "author":"Dostoyevski",
+      "author": "Dostoyevski",
       "publisher": "hasan ali yücel",
       "price": 100,
       "isbn": "650476796597",
@@ -11,7 +11,7 @@
     },
     {
       "id": "1678557119326",
-      "title": "Diriliş ",
+      "title": "Diriliş",
       "author": "Victor Hugo",
       "publisher": "Hasan Ali Yücel",
       "price": "100",
@@ -19,13 +19,13 @@
       "categoryId": "1"
     },
     {
-      "id": "1678557230173",
-      "title": "sefiller",
-      "author": "Victor Hugo",
-      "publisher": "Hasan Ali yücel",
-      "price": "100",
-      "isbn": "32415413543",
-      "categoryId": "1"
+      "id": "1679303317559",
+      "title": "Puslu Kıtalar Atlasııı",
+      "author": "İhsan Oktay Anar",
+      "publisher": "İletişim",
+      "price": "70",
+      "isbn": "5428675466542",
+      "categoryId": "3"
     }
   ],
   "categories": [
@@ -38,8 +38,8 @@
       "name": "hikaye"
     },
     {
-      "id":"3",
-      "name":"bilim kurgu"
-       }
+      "id": "3",
+      "name": "bilim kurgu"
+    }
   ]
 }

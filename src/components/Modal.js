@@ -18,7 +18,7 @@ const Modal = ({
   confirmButtonClick = () => {},
   hasConfirmButton = false,
   cancelButtonText = "Kapat",
-  cancelButtonType = "primary",
+  cancelButtonType = "success",
   cancelButtonClick = () => {},
   visible = false,
 }) => {
