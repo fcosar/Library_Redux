@@ -14,7 +14,7 @@ const Modal = ({
   title = "",
   content = "",
   confirmButtonText = "Onayla",
-  confirmButtonType = "danger",
+  confirmButtonType = "warning",
   confirmButtonClick = () => {},
   hasConfirmButton = false,
   cancelButtonText = "Kapat",

@@ -3,15 +3,15 @@ import React,{useState} from "react";
 import { useSelector,useDispatch } from "react-redux";
 import actionTypes from "../redux/actions/actionTypes";
 import { upperFirstLetter } from "../utils/functions";
-
 import api from "../api/api";
 import urls from "../api/urls";
+import { Link } from "react-router-dom";
 
 import Modal from "./Modal";
 
 const ListCategories = () => {
   const dispatch=useDispatch()
-  const { categoriesState, booksState } = useSelector((state) => state);
+  const { categoriesState, booksState,themeState } = useSelector((state) => state);
   const [showDeleteModal,setShowDeleteModal]=useState(false)
   const [willDeleteCategory,setWillDeleteCategory]=useState("")
 
@@ -26,7 +26,13 @@ const ListCategories = () => {
   }
 
   return (
-    <div>
+    <div style={{
+        padding: "20px",
+        borderRadius: "25px",
+        width: "100%",
+        minHeight: "100vh"
+      }}
+      >
       {categoriesState.categories.length === 0 && (
         <div className="my-5 d-flex justify-content-center">
           <div className="alert alert-warning text-center w-75" role="alert">
@@ -35,7 +41,10 @@ const ListCategories = () => {
         </div>
       )}
       {categoriesState.categories.length > 0 && (
-        <table className={`table table-striped table-light`}>
+        <table 
+        className={`table table-striped ${
+            themeState === "light" ? "table-light" : "table-dark"
+          }`}>
           <thead>
             <tr>
               <th scope="col">Sıra No</th>
@@ -66,12 +75,12 @@ const ListCategories = () => {
                       <button onClick={()=>{
                         setShowDeleteModal(true)
                         setWillDeleteCategory(category.id)
-                      }} type="button" className="btn btn-danger btn-sm">
+                      }} type="button" className="btn btn-warning btn-sm">
                         Sil
                       </button>
-                      <button type="button" className="btn btn-warning btn-sm">
+                      <Link to={`/edit-category/${category.id}`} className="btn btn-secondary btn-sm">
                         Güncelle
-                      </button>
+                      </Link>
                     </div>
                   </td>
                 </tr>

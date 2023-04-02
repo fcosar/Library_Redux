@@ -5,19 +5,19 @@ import ListBooks from "../components/ListBooks";
 import Button from "../components/Button";
 import { useSelector } from "react-redux";
 
-
 const Home = () => {
   const navigate = useNavigate();
   const { themeState } = useSelector((state) => state);
   return (
     <div
-      style={{ minHeight: "100vh" }}
-      className={themeState === "light" ? "bg-light" : "bg-dark"}>
+      className={themeState === "light" ? "light" : "bg-dark"} >
       <Header />
-      <div className="container my-5">
+      <div 
+       className="container my-5">
         <div className="d-flex justify-content-end">
           <Button
-            type={themeState === "light" ? "success" : "success"}
+            className="btn-sm m-3"
+            type={themeState === "light" ? "success" : "success" }
             text="Kitap Ekle"
             onClick={() => navigate("/add-book")}
           />

@@ -4,7 +4,7 @@
       "id": "1",
       "title": "suç ve ceza",
       "author": "Dostoyevski",
-      "publisher": "hasan ali yücel",
+      "publisher": "iş bankası",
       "price": 100,
       "isbn": "650476796597",
       "categoryId": "1"
@@ -15,17 +15,71 @@
       "author": "Victor Hugo",
       "publisher": "Hasan Ali Yücel",
       "price": "100",
-      "isbn": "435784345642",
+      "isbn": "435784345641",
       "categoryId": "1"
     },
     {
       "id": "1679303317559",
-      "title": "Puslu Kıtalar Atlasııı",
+      "title": "Puslu Kıtalar Atlası",
       "author": "İhsan Oktay Anar",
       "publisher": "İletişim",
       "price": "70",
       "isbn": "5428675466542",
+      "categoryId": "1"
+    },
+    {
+      "id": "1679317554520",
+      "title": "Cesur Yeni Dünya",
+      "author": "huxley",
+      "publisher": "İletişim",
+      "price": "",
+      "isbn": "9567590267",
       "categoryId": "3"
+    },
+    {
+      "id": "1679430495133",
+      "title": "Fahrenheit 451",
+      "author": "Ray Bradbury",
+      "publisher": "İthaki",
+      "price": "150",
+      "isbn": "7586745957777",
+      "categoryId": "3"
+    },
+    {
+      "id": "1679430668888",
+      "title": "Sineklerin Tanrısı",
+      "author": " William Golding",
+      "publisher": "Türkiye iş bankası",
+      "price": "120",
+      "isbn": "7589475657695",
+      "categoryId": "1"
+    },
+    {
+      "id": "1679430778357",
+      "title": "İki Şehrin Hikayesi ",
+      "author": "Charles Dickens",
+      "publisher": "Hasan ali yücel",
+      "price": "140",
+      "isbn": "7465056542678",
+      "categoryId": "1"
+    },
+    {
+      "id": "1679430860911",
+      "title": "Körlük",
+      "author": "Jose Saramago",
+      "publisher": "Kırmızı kedi",
+      "price": "120",
+      "isbn": "760857639768",
+      "categoryId": "1679343540492"
+    },
+    {
+      "id": "1679430990390",
+      "title": "İnsanın Anlam Arayışı",
+      "author": "Victor E. Frankl",
+      "publisher": "Okuyan Us",
+      "price": "100",
+      "isbn": "75464275685056",
+      "categoryId": "1679431062424"
     }
   ],
   "categories": [
@@ -39,7 +93,19 @@
     },
     {
       "id": "3",
-      "name": "bilim kurgu"
+      "name": "bilim kurgu "
+    },
+    {
+      "id": "1679343540492",
+      "name": "distopya"
+    },
+    {
+      "id": "1679343635549",
+      "name": "Polisiye"
+    },
+    {
+      "id": "1679431062424",
+      "name": "psikoloji"
     }
   ]
 }

@@ -1,12 +1,9 @@
-import React, { useState, useRef } from "react";
-
+import React, { useState } from "react";
 import Header from "../components/Header";
-
 import { useParams, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { upperFirstLetter } from "../utils/functions";
 import actionTypes from "../redux/actions/actionTypes";
-
 import api from "../api/api";
 import urls from "../api/urls";
 
@@ -60,7 +57,7 @@ const EditBook = () => {
       <div className="container my-5">
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
-            <label htmlFor="title" className="form-label">
+            <label htmlFor="title" className="form-label fw-bold fs-5">
               Kitap Adı
             </label>
             <input
@@ -83,7 +80,7 @@ const EditBook = () => {
             )}
           </div>
           <div className="mb-3">
-            <label htmlFor="author" className="form-label">
+            <label htmlFor="author" className="form-label fw-bold fs-5">
               Kitap Yazarı
             </label>
             <input
@@ -106,7 +103,7 @@ const EditBook = () => {
             )}
           </div>
           <div className="mb-3">
-            <label htmlFor="publisher" className="form-label">
+            <label htmlFor="publisher" className="form-label fw-bold fs-5">
               Yayın Evi
             </label>
             <input
@@ -121,7 +118,7 @@ const EditBook = () => {
             />
           </div>
           <div className="mb-3">
-            <label htmlFor="price" className="form-label">
+            <label htmlFor="price" className="form-label fw-bold fs-5">
               Fiyat
             </label>
             <input
@@ -136,7 +133,7 @@ const EditBook = () => {
             />
           </div>
           <div className="mb-3">
-            <label htmlFor="isbn" className="form-label">
+            <label htmlFor="isbn" className="form-label fw-bold fs-5">
               ISBN
             </label>
             <input
@@ -164,7 +161,7 @@ const EditBook = () => {
             ))}
           </select>
           <div className="d-flex justify-content-center my-5">
-            <button type="submit" className="btn btn-primary w-50">
+            <button type="submit" className="btn btn-success w-50">
               Kaydet
             </button>
           </div>

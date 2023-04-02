@@ -1,6 +1,6 @@
 import React from "react";
-
 import Header from "../components/Header";
+import Price from "../components/Price";
 
 import { useParams, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -9,7 +9,7 @@ import { upperFirstLetter } from "../utils/functions";
 const BookDetail = () => {
   const navigate = useNavigate();
   const { bookId } = useParams();
-  const { booksState, categoriesState } = useSelector((state) => state);
+  const { booksState, categoriesState} = useSelector((state) => state);
   /* let myBook=null
     for(let i=0;i<booksState.books.length;i++){
         if(booksState.books[i].id === bookId){
@@ -22,7 +22,7 @@ const BookDetail = () => {
     (item) => item.id === myBook.categoryId
   );
   return (
-    <div>
+    <div >
       <Header />
       <div className="container my-5 d-flex justify-content-center">
         <div
@@ -74,7 +74,9 @@ const BookDetail = () => {
             <p>
               <b>Fiyat</b>
             </p>
-            <p>{myBook.price === "" ? "Belirtilmemiş" : myBook.price}</p>
+            <div >
+               <Price/>              
+            </div>
           </div>
           <div className="d-flex justify-content-between my-3">
             <p>

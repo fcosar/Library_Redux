@@ -1,9 +1,8 @@
 body{
-   
+    background: url("../assets/lib1.jpg") no-repeat center center fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgb(243, 230, 210);
-}
+    }
 .headerBgDark{
     background-color: #2E4F4F !important;
 }

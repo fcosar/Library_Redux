@@ -1,11 +1,9 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-
 import actionTypes from "../redux/actions/actionTypes";
 import "../styles/general.css";
-// import sun from '../assets/sun1.gif'
+
 
 const Header = () => {
   const { themeState,booksState,categoriesState } = useSelector((state) => state);
@@ -70,7 +68,6 @@ const Header = () => {
               })
             }
             className="btn btn-sm btn-warning">
-            {/* <img style={{width:'20px',height:'20px',marginRight:'10px'}} src={sun} /> */}
             <span>Light</span>
           </button>
         )}

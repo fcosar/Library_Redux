@@ -30,7 +30,6 @@ export const upperFirstLetter = (sample = "") => {
   
     return newSample;
   };
-  
   export const upperFirstLetter2 = (sample = "") => {
     return sample
       .split(" ")

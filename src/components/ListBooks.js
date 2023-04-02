@@ -1,18 +1,15 @@
 import React,{useState} from "react";
-
 import { useSelector, useDispatch } from "react-redux";
-
 import { upperFirstLetter, upperFirstLetter2 } from "../utils/functions";
-import Button from "./Button";
+import { useNavigate } from "react-router-dom";
 
 import api from "../api/api";
 import urls from "../api/urls";
-
 import actionTypes from "../redux/actions/actionTypes";
 
 import Modal from "./Modal";
+import Button from "./Button";
 
-import { useNavigate } from "react-router-dom";
 
 const ListBooks = () => {
   const { booksState, categoriesState, themeState } = useSelector(
@@ -36,7 +33,12 @@ const ListBooks = () => {
   
   
   return (
-    <div>
+    <div style={{
+      padding: "20px",
+      borderRadius: "25px",
+      width: "100%",
+      minHeight: "100vh"
+    }}>
       {booksState.books.length === 0 && (
         <div className="my-5 d-flex justify-content-center">
           <div className="alert alert-warning text-center w-75" role="alert">
@@ -45,11 +47,12 @@ const ListBooks = () => {
         </div>
       )}
       {booksState.books.length > 0 && (
-        <div>
-          <table
-            className={`table table-striped ${
+        <div >
+          <table 
+            className={`table table-warning table-striped ${
               themeState === "light" ? "table-light" : "table-dark"
-            }`}>
+            }`}
+            >
             <thead>
               <tr>
                 <th scope="col">Sıra No</th>
@@ -64,7 +67,8 @@ const ListBooks = () => {
                   (item) => item.id === book.categoryId
                 );
                 return (
-                  <tr key={book.id}>
+                  
+                   <tr key={book.id}>
                     <th scope="row">{index + 1}</th>
                     <td>{upperFirstLetter2(book.title)}</td>
                     <td>{upperFirstLetter(myCategory.name)}</td>

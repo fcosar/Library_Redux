@@ -9,10 +9,9 @@ import actionTypes from "../redux/actions/actionTypes";
 import Modal from "../components/Modal";
 
 const AddBook = () => {
-  const { categoriesState } = useSelector((state) => state);
+  const { categoriesState} = useSelector((state) => state);
   const dispatch = useDispatch();
   const navigate = useNavigate();
-
   const [openSuccessModal,setOpenSuccessModal]=useState(false)
   const [formState, setFormState] = useState({
     id: String(new Date().getTime()),
@@ -23,7 +22,6 @@ const AddBook = () => {
     isbn: "",
     categoryId: "empty",
   });
-
   const handleSubmit = (event) => {
     event.preventDefault();
     /* validation */
@@ -39,7 +37,6 @@ const AddBook = () => {
       alert("Kitap yazarı zorunludur");
       return;
     }
-
     api
       .post(urls.books, formState)
       .then((res) => {
@@ -51,11 +48,15 @@ const AddBook = () => {
       })
       .catch((err) => {});
   };
-
   return (
     <div>
       <Header />
-      <div className="container my-5">
+      <div  style={{
+        background: "#FFF4E0",
+        padding: "20px",
+        borderRadius: "25px",
+        width: "80%",
+      }} className="container my-5">
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
             <label htmlFor="title" className="form-label">
@@ -69,8 +70,7 @@ const AddBook = () => {
               value={formState.title}
               onChange={(event) =>
                 setFormState({ ...formState, title: event.target.value })
-              }
-            />
+              } />
           </div>
           <div className="mb-3">
             <label htmlFor="author" className="form-label">
