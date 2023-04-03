@@ -13,7 +13,7 @@
       "id": "1678557119326",
       "title": "Diriliş",
       "author": "Victor Hugo",
-      "publisher": "Hasan Ali Yücel",
+      "publisher": "İş bankası",
       "price": "100",
       "isbn": "435784345641",
       "categoryId": "1"
@@ -23,18 +23,9 @@
       "title": "Puslu Kıtalar Atlası",
       "author": "İhsan Oktay Anar",
       "publisher": "İletişim",
-      "price": "70",
+      "price": "100",
       "isbn": "5428675466542",
       "categoryId": "1"
-    },
-    {
-      "id": "1679317554520",
-      "title": "Cesur Yeni Dünya",
-      "author": "huxley",
-      "publisher": "İletişim",
-      "price": "",
-      "isbn": "9567590267",
-      "categoryId": "3"
     },
     {
       "id": "1679430495133",
@@ -58,7 +49,7 @@
       "id": "1679430778357",
       "title": "İki Şehrin Hikayesi ",
       "author": "Charles Dickens",
-      "publisher": "Hasan ali yücel",
+      "publisher": "İş Bankası",
       "price": "140",
       "isbn": "7465056542678",
       "categoryId": "1"
@@ -80,16 +71,21 @@
       "price": "100",
       "isbn": "75464275685056",
       "categoryId": "1679431062424"
+    },
+    {
+      "id": "1680509526840",
+      "title": "Cesur Yeni Dünya",
+      "author": "Huxley",
+      "publisher": "İletişim",
+      "price": "100",
+      "isbn": "4r43285240",
+      "categoryId": "3"
     }
   ],
   "categories": [
     {
       "id": "1",
       "name": "roman"
-    },
-    {
-      "id": "2",
-      "name": "hikaye"
     },
     {
       "id": "3",
@@ -100,12 +96,16 @@
       "name": "distopya"
     },
     {
-      "id": "1679343635549",
-      "name": "Polisiye"
-    },
-    {
       "id": "1679431062424",
       "name": "psikoloji"
+    },
+    {
+      "id": "1680509879195",
+      "name": "hikaye"
+    },
+    {
+      "id": "1680509892517",
+      "name": "Kişisel gelişim"
     }
   ]
 }

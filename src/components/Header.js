@@ -4,7 +4,6 @@ import { useSelector, useDispatch } from "react-redux";
 import actionTypes from "../redux/actions/actionTypes";
 import "../styles/general.css";
 
-
 const Header = () => {
   const { themeState,booksState,categoriesState } = useSelector((state) => state);
   const dispatch = useDispatch();

@@ -30,8 +30,6 @@ const ListBooks = () => {
       })
       .catch((err) => {});
   };
-  
-  
   return (
     <div style={{
       padding: "20px",
